@@ -1,0 +1,21 @@
+{
+  "mcpservers": {
+    "lara": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "LARA_ACCESS_KEY_ID",
+        "-e",
+        "LARA_ACCESS_KEY_SECRET",
+        "mcp/lara"
+      ],
+      "env": {
+        "LARA_ACCESS_KEY_ID": "TVQO4I5AKCPK1TSB3SCI1R30G7",
+        "LARA_ACCESS_KEY_SECRET": "H4LS-ET1-D2qfwhHEHnOn9rHiTZV_88z4t4zmgw9L7Y"
+      }
+    }
+  }
+}

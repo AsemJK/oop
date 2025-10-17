@@ -21,5 +21,12 @@ This is abstraction, for object show only what you need based on context.
 
 ### Encapsulation
 
-Encapsulation is the ability of an object to hide parts of its sate and behaviors from other objects, exposing only a limited interface to the rest of the prgram.
+Encapsulation is the ability of an object to hide parts of its state and behaviors from other objects, exposing only a limited interface to the rest of the prgram.
+
+Example:
+You have a car, To start engin you only need to turn a key or press start button right? you don't need to know about wires under the hood or crankshaft or even cylinders, so you have a simple **interface** contains a start switch, a steering wheel and some pedals.
+__Interface__ is the public part of an object and open the interactions with other objects.
+
+الخلاصة:
+في هذا الجزء من نموذج البرمجة كائنية التوجه نقول أن العنصر يجب أن يكون فيه آلية لإخفاء و إظهاء الخصائص و الأفعال داخله و تكون هناك فقط واجهة له تحدد سياسة تفاعله مع العناصر الأخرى في التطبيق
 
