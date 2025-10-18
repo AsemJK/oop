@@ -30,3 +30,16 @@ __Interface__ is the public part of an object and open the interactions with oth
 الخلاصة:
 في هذا الجزء من نموذج البرمجة كائنية التوجه نقول أن العنصر يجب أن يكون فيه آلية لإخفاء و إظهاء الخصائص و الأفعال داخله و تكون هناك فقط واجهة له تحدد سياسة تفاعله مع العناصر الأخرى في التطبيق
 
+### Inheritance
+
+Inheritance is a mechanism by which one class (child / derived) acquires the properties and behaviors of another class (parent / base).  
+It lets you define a new class that _reuses_, extends or modifies the behavior of the existing class without touching its code.
+
+Example:  
+We already have a base class `Vehicle` that contains general properties: `speed`, `weight`, `fuelCapacity`, and a method `move()`.  
+When we need a `Plane` we do NOT copy-paste all of that code; instead we **inherit** from `Vehicle` and add only the extras that are specific to a plane: `altitude`, `pitchAngle`, `takeOff()`, `land()`.
+
+If tomorrow we build `Car` or `Boat` we still inherit from the same `Vehicle`, guaranteeing that every vehicle in our program already “knows” how to `move()` while allowing each subclass to specialize further.
+
+الخلاصة:  
+الوراثة تسمح لك بإنشاء كلاس جديد يعيد استخدام كل الخصائص والوظائف الموجودة في كلاس آخر ويضيف إليها ما يلزم، مما يقلل التكرار ويزيد من إعادة استخدام الشيفرة.
